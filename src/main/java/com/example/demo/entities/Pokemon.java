@@ -20,7 +20,7 @@ import lombok.Data;
 @Entity
 public class Pokemon {
 
-	@Id
+	
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(nullable=false)
 	private Serial id;
@@ -31,6 +31,7 @@ public class Pokemon {
 	@Column(nullable=false)
 	private Text descripcion;
 	
+	@Id
 	@Column(nullable=false)
 	private Integer tipo_pokemon;
 	
